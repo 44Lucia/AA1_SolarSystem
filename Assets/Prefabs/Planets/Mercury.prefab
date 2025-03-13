@@ -5103,8 +5103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mass: 0.000000166
-  initialPosition: {x: 0.78, y: 0, z: 0}
-  initialVelocity: {x: 0, y: 0, z: 7.12}
+  initialPosition: {x: 0.39, y: 0, z: 0}
+  initialVelocity: {x: 0, y: 0, z: 10.07}
   isStatic: 0
 --- !u!96 &5676004799456249116
 TrailRenderer:

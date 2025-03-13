@@ -15,8 +15,8 @@ public class CelestialBody : MonoBehaviour
 
     private void Start()
     {
-        transform.position = initialPosition;
-        velocity = initialVelocity;
+        transform.position = initialPosition * SimulationConstants.ScaleFactor;
+        velocity = initialVelocity * Mathf.Sqrt(1 / SimulationConstants.ScaleFactor);
     }
 
     public void CalculateAcceleration(List<CelestialBody> bodies)
