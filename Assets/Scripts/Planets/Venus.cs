@@ -7,8 +7,8 @@ public class Venus : CelestialBody
     private void Awake()
     {
         mass = 2.45e-6f;
-        transform.position = new Vector3(0.72f, 0f, 0f);
-        velocity = new Vector3(0f, 7.38f, 0f);
+        transform.position = new Vector3(1.44f, 0f, 0f);
+        velocity = new Vector3(0f, 5.22f, 0f);           
     }
 
     public override void CalculateAcceleration(List<CelestialBody> bodies)

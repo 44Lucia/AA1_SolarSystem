@@ -7,8 +7,8 @@ public class Mercury : CelestialBody
     private void Awake()
     {
         mass = 1.66e-7f;
-        transform.position = new Vector3(0.39f, 0f, 0f);
-        velocity = new Vector3(0f, 10.07f, 0f);
+        transform.position = new Vector3(0.78f, 0f, 0f);
+        velocity = new Vector3(0f, 7.12f, 0f);        
     }
 
     public override void CalculateAcceleration(List<CelestialBody> bodies)
