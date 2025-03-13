@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1229251971759408710}
   - component: {fileID: 7400510438367465617}
-  - component: {fileID: 30643177434977548}
+  - component: {fileID: 4482858432512927821}
   m_Layer: 0
   m_Name: SunV1
   m_TagString: Actors
@@ -58,7 +58,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &30643177434977548
+--- !u!114 &4482858432512927821
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67,12 +67,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3548356298615962880}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b81b8be7f4632d4691d31c7dc5035e2, type: 3}
+  m_Script: {fileID: 11500000, guid: 2de4ac2d57295d4499f69c872f83af64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  velocity: {x: 0, y: 0, z: 0}
-  acceleration: {x: 0, y: 0, z: 0}
+  mass: 1
+  initialPosition: {x: 0, y: 0, z: 0}
+  initialVelocity: {x: 0, y: 0, z: 0}
   isStatic: 1
 --- !u!1 &3874492676428625441
 GameObject:

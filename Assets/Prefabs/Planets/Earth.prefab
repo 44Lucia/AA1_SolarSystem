@@ -4934,7 +4934,7 @@ GameObject:
   - component: {fileID: 4643521465287934}
   - component: {fileID: 205568318585521926}
   - component: {fileID: 4878998461253096602}
-  - component: {fileID: 8995063659549479092}
+  - component: {fileID: 8327627301025794384}
   - component: {fileID: 4324496198258822837}
   m_Layer: 0
   m_Name: Earth
@@ -5007,7 +5007,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8995063659549479092
+--- !u!114 &8327627301025794384
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5016,12 +5016,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1733945558841920}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d36a5c748d0347c49b80e7d56bd00815, type: 3}
+  m_Script: {fileID: 11500000, guid: 2de4ac2d57295d4499f69c872f83af64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  velocity: {x: 0, y: 6.28, z: 0}
-  acceleration: {x: 0, y: 0, z: 0}
+  mass: 0.000003
+  initialPosition: {x: 2, y: 0, z: 0}
+  initialVelocity: {x: 0, y: 0, z: 4.44}
   isStatic: 0
 --- !u!96 &4324496198258822837
 TrailRenderer:

@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4024914263291546}
   - component: {fileID: 205720317299591224}
   - component: {fileID: 4182879556056083133}
-  - component: {fileID: 3862188175519635165}
+  - component: {fileID: 923689175923436844}
   - component: {fileID: 98471966339197819}
   m_Layer: 0
   m_Name: Venus
@@ -167,7 +167,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3862188175519635165
+--- !u!114 &923689175923436844
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,12 +176,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1647581975099426}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c26da2479267e9f449b00f63b78ea9e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 2de4ac2d57295d4499f69c872f83af64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  velocity: {x: 0, y: 0, z: 0}
-  acceleration: {x: 0, y: 0, z: 0}
+  mass: 0.00000245
+  initialPosition: {x: 1.44, y: 0, z: 0}
+  initialVelocity: {x: 0, y: 0, z: 5.22}
   isStatic: 0
 --- !u!96 &98471966339197819
 TrailRenderer:

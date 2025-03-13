@@ -5017,7 +5017,7 @@ GameObject:
   - component: {fileID: 4620931210112870}
   - component: {fileID: 205527854345052348}
   - component: {fileID: 2366119673273863367}
-  - component: {fileID: 1934396898660333946}
+  - component: {fileID: 3191096320739234342}
   - component: {fileID: 5676004799456249116}
   m_Layer: 0
   m_Name: Mercury
@@ -5090,7 +5090,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1934396898660333946
+--- !u!114 &3191096320739234342
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5099,12 +5099,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1856687845478954}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5601f78d4d07b64eaa5d6adc2733931, type: 3}
+  m_Script: {fileID: 11500000, guid: 2de4ac2d57295d4499f69c872f83af64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  velocity: {x: 0, y: 0, z: 0}
-  acceleration: {x: 0, y: 0, z: 0}
+  mass: 0.000000166
+  initialPosition: {x: 0.78, y: 0, z: 0}
+  initialVelocity: {x: 0, y: 0, z: 7.12}
   isStatic: 0
 --- !u!96 &5676004799456249116
 TrailRenderer:

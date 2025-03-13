@@ -1050,15 +1050,15 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1733945558841920, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
   m_PrefabInstance: {fileID: 769062894}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &990048794 stripped
+--- !u!114 &990048801 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8995063659549479092, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8327627301025794384, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
   m_PrefabInstance: {fileID: 769062894}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 990048791}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d36a5c748d0347c49b80e7d56bd00815, type: 3}
+  m_Script: {fileID: 11500000, guid: 2de4ac2d57295d4499f69c872f83af64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &999153374
@@ -1203,13 +1203,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1421423432 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 30643177434977548, guid: 5f776740c447e45afb25edbca842de92, type: 3}
+  m_CorrespondingSourceObject: {fileID: 4482858432512927821, guid: 5f776740c447e45afb25edbca842de92, type: 3}
   m_PrefabInstance: {fileID: 999153374}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421423428}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b81b8be7f4632d4691d31c7dc5035e2, type: 3}
+  m_Script: {fileID: 11500000, guid: 2de4ac2d57295d4499f69c872f83af64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1530462591
@@ -1352,15 +1352,15 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1856687845478954, guid: ab152f61198d54532ae39108e616ff59, type: 3}
   m_PrefabInstance: {fileID: 1569938495}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1575593000 stripped
+--- !u!114 &1575593007 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1934396898660333946, guid: ab152f61198d54532ae39108e616ff59, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3191096320739234342, guid: ab152f61198d54532ae39108e616ff59, type: 3}
   m_PrefabInstance: {fileID: 1569938495}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575592997}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5601f78d4d07b64eaa5d6adc2733931, type: 3}
+  m_Script: {fileID: 11500000, guid: 2de4ac2d57295d4499f69c872f83af64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1667179179
@@ -1429,15 +1429,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4024914263291546, guid: 835acc1a9ebe24c0fa3854c99346f9cd, type: 3}
   m_PrefabInstance: {fileID: 1667179179}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1667179183 stripped
+--- !u!114 &1667179190 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3862188175519635165, guid: 835acc1a9ebe24c0fa3854c99346f9cd, type: 3}
+  m_CorrespondingSourceObject: {fileID: 923689175923436844, guid: 835acc1a9ebe24c0fa3854c99346f9cd, type: 3}
   m_PrefabInstance: {fileID: 1667179179}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 20754005}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c26da2479267e9f449b00f63b78ea9e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 2de4ac2d57295d4499f69c872f83af64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1759737217 stripped
@@ -2169,21 +2169,25 @@ PrefabInstance:
       value: GravitationalSimulator
       objectReference: {fileID: 0}
     - target: {fileID: 6659469465965689720, guid: c99d3295b153f1b4a8d3fe1c5b69f50d, type: 3}
+      propertyPath: celestialBodies.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6659469465965689720, guid: c99d3295b153f1b4a8d3fe1c5b69f50d, type: 3}
       propertyPath: celestialBodies.Array.data[0]
       value: 
       objectReference: {fileID: 1421423432}
     - target: {fileID: 6659469465965689720, guid: c99d3295b153f1b4a8d3fe1c5b69f50d, type: 3}
       propertyPath: celestialBodies.Array.data[1]
       value: 
-      objectReference: {fileID: 1575593000}
+      objectReference: {fileID: 1575593007}
     - target: {fileID: 6659469465965689720, guid: c99d3295b153f1b4a8d3fe1c5b69f50d, type: 3}
       propertyPath: celestialBodies.Array.data[2]
       value: 
-      objectReference: {fileID: 1667179183}
+      objectReference: {fileID: 1667179190}
     - target: {fileID: 6659469465965689720, guid: c99d3295b153f1b4a8d3fe1c5b69f50d, type: 3}
       propertyPath: celestialBodies.Array.data[3]
       value: 
-      objectReference: {fileID: 990048794}
+      objectReference: {fileID: 990048801}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

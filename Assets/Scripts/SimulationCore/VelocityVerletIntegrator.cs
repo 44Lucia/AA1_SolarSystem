@@ -12,21 +12,21 @@ public class VelocityVerletIntegrator : IIntegrator
         for (int i = 0; i < bodies.Count; i++)
         {
             CelestialBody body = bodies[i];
-            if (body.isStatic)
+            if (body.IsStatic)
             {
                 oldAccelerations[i] = Vector3.zero;
                 continue;
             }
-            oldAccelerations[i] = body.acceleration;
-            Vector3 newPosition = body.transform.position + body.velocity * timeStep
-                                  + 0.5f * body.acceleration * timeStep * timeStep;
+            oldAccelerations[i] = body.Acceleration;
+            Vector3 newPosition = body.transform.position + body.Velocity * timeStep
+                                  + 0.5f * body.Acceleration * timeStep * timeStep;
             body.transform.position = newPosition;
         }
 
         // 2. Recalculate the accelerations with the new positions
         foreach (CelestialBody body in bodies)
         {
-            if (!body.isStatic)
+            if (!body.IsStatic)
             {
                 body.CalculateAcceleration(bodies);
             }
@@ -36,8 +36,8 @@ public class VelocityVerletIntegrator : IIntegrator
         for (int i = 0; i < bodies.Count; i++)
         {
             CelestialBody body = bodies[i];
-            if (body.isStatic) continue;
-            body.velocity += 0.5f * (oldAccelerations[i] + body.acceleration) * timeStep;
+            if (body.IsStatic) continue;
+            body.Velocity = body.Velocity + 0.5f * (oldAccelerations[i] + body.Acceleration) * timeStep;
         }
     }
 }
