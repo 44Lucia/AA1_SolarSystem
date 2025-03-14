@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
@@ -14,10 +13,7 @@ public class CameraController : MonoBehaviour
 
     private UIManager m_ui;
 
-    private void Awake()
-    {
-        m_targetDistance = distanceLimits.y / 2;
-    }
+    private void Awake() { m_targetDistance = distanceLimits.y / 2; }
 
     private void Start()
     {
@@ -92,7 +88,7 @@ public class CameraController : MonoBehaviour
         // right click
         if (Input.GetMouseButtonDown(1))
         {
-            if(++m_targetIndex == m_possibleTargets.Length) { m_targetIndex = 0; }
+            if (++m_targetIndex == m_possibleTargets.Length) { m_targetIndex = 0; }
             m_ui.SetTargetText(m_possibleTargets[m_targetIndex].name);
         }
     }

@@ -1,10 +1,9 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CelestialBody : MonoBehaviour
 {
-    [Header("Propiedades del Cuerpo Celeste")]
+    [Header("Properties")]
     [SerializeField] private float mass = 1f;
     [SerializeField] private Vector3 initialPosition = Vector3.zero;
     [SerializeField] private Vector3 initialVelocity = Vector3.zero;
@@ -15,7 +14,6 @@ public class CelestialBody : MonoBehaviour
 
     private void Awake()
     {
-
         transform.position = initialPosition * SimulationConstants.ScaleFactor;
         velocity = initialVelocity * Mathf.Sqrt(1 / SimulationConstants.ScaleFactor);
 
@@ -23,10 +21,10 @@ public class CelestialBody : MonoBehaviour
         trail.enabled = true;
     }
 
-    public void CalculateAcceleration(List<CelestialBody> bodies)
+    public void CalculateAcceleration(List<CelestialBody> p_bodies)
     {
         acceleration = Vector3.zero;
-        foreach (CelestialBody body in bodies)
+        foreach (CelestialBody body in p_bodies)
         {
             if (body != this)
             {
