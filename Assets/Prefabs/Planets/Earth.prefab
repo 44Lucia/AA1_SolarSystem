@@ -4913,6 +4913,8 @@ MonoBehaviour:
   initialPosition: {x: 1, y: 0, z: 0}
   initialVelocity: {x: 0, y: 0, z: 6.28}
   isStatic: 0
+  orbitalCenter: {fileID: 0}
+  isMoon: 0
 --- !u!96 &4324496198258822837
 TrailRenderer:
   serializedVersion: 3

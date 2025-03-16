@@ -9,6 +9,10 @@ public class CelestialBody : MonoBehaviour
     [SerializeField] private Vector3 initialVelocity = Vector3.zero;
     [SerializeField] private bool isStatic = false;
 
+    [Header("Moon Settings")]
+    [SerializeField] private CelestialBody orbitalCenter;
+    [SerializeField] private bool isMoon = false;
+
     private Vector3 velocity;
     private Vector3 acceleration;
 
@@ -25,17 +29,17 @@ public class CelestialBody : MonoBehaviour
     {
         acceleration = Vector3.zero;
         foreach (CelestialBody body in p_bodies)
-        {
-            if (body != this)
-            {
-                Vector3 direction = body.transform.position - transform.position;
-                float distanceSqr = direction.sqrMagnitude;
+        { 
+            if (body == this || body.isMoon) { continue; } // no self-interaction or moon-moon interaction
+            if (isMoon && body != orbitalCenter) { continue; } // moons only get attractd by their orbital center
 
-                if (distanceSqr < 0.0001f) { continue; }
+            Vector3 direction = body.transform.position - transform.position;
+            float distanceSqr = direction.sqrMagnitude;
 
-                float forceMagnitude = SimulationConstants.GravitationalConstant * body.mass / distanceSqr;
-                acceleration += direction.normalized * forceMagnitude;
-            }
+            if (distanceSqr < 0.0001f) { continue; }
+
+            float forceMagnitude = SimulationConstants.GravitationalConstant * body.mass / distanceSqr;
+            acceleration += direction.normalized * forceMagnitude;
         }
     }
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.055021465, g: 0.049682096, b: 0.057946444, a: 1}
+  m_IndirectSpecularColor: {r: 0.05502093, g: 0.049681276, b: 0.05794522, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -340,25 +340,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 685557961}
     m_Modifications:
-    - target: {fileID: 4116554109701155880, guid: 05f83c52d1bc44293a6b0b2bee748289, type: 3}
-      propertyPath: simulationSpeed
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4116554109701155880, guid: 05f83c52d1bc44293a6b0b2bee748289, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4117684578632384272, guid: 05f83c52d1bc44293a6b0b2bee748289, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4315080524192134688, guid: 05f83c52d1bc44293a6b0b2bee748289, type: 3}
       propertyPath: m_Name
       value: Asteroids Sphere
-      objectReference: {fileID: 0}
-    - target: {fileID: 4315080524192134688, guid: 05f83c52d1bc44293a6b0b2bee748289, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4319175231800751054, guid: 05f83c52d1bc44293a6b0b2bee748289, type: 3}
       propertyPath: m_RootOrder
@@ -817,10 +801,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth
       objectReference: {fileID: 0}
-    - target: {fileID: 1733945558841920, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4643521465287934, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -839,23 +819,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4643521465287934, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9986295
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4643521465287934, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.052335896
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4643521465287934, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4643521465287934, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4643521465287934, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4643521465287934, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1065,10 +1045,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moon
       objectReference: {fileID: 0}
-    - target: {fileID: 1408581670749804, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4693579709242440, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1083,7 +1059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4693579709242440, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.5
+      value: 6.4
       objectReference: {fileID: 0}
     - target: {fileID: 4693579709242440, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1113,21 +1089,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4894830720188571109, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
-      propertyPath: primaryBody
+    - target: {fileID: 6670036153290033054, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
+      propertyPath: orbitalCenter
       value: 
       objectReference: {fileID: 990048801}
-    - target: {fileID: 4894830720188571109, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
-      propertyPath: initialPosition.x
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1408581670749804, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1759737221}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
 --- !u!4 &1530462592 stripped
 Transform:
@@ -1298,11 +1267,10 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1408581670749804, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
   m_PrefabInstance: {fileID: 1530462591}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1759737221
+--- !u!114 &1759737221 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6670036153290033054, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
+  m_PrefabInstance: {fileID: 1530462591}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759737217}
   m_Enabled: 1
@@ -1310,10 +1278,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de4ac2d57295d4499f69c872f83af64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0.000000037
-  initialPosition: {x: 1.00257, y: 0, z: 0}
-  initialVelocity: {x: 0, y: 6.49, z: 0}
-  isStatic: 0
 --- !u!1 &1920967551
 GameObject:
   m_ObjectHideFlags: 0
@@ -1765,10 +1729,6 @@ PrefabInstance:
       value: GravitationalSimulator
       objectReference: {fileID: 0}
     - target: {fileID: 6659469465965689720, guid: c99d3295b153f1b4a8d3fe1c5b69f50d, type: 3}
-      propertyPath: celestialBodies.Array.size
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6659469465965689720, guid: c99d3295b153f1b4a8d3fe1c5b69f50d, type: 3}
       propertyPath: celestialBodies.Array.data[0]
       value: 
       objectReference: {fileID: 1421423432}
@@ -1783,31 +1743,31 @@ PrefabInstance:
     - target: {fileID: 6659469465965689720, guid: c99d3295b153f1b4a8d3fe1c5b69f50d, type: 3}
       propertyPath: celestialBodies.Array.data[3]
       value: 
-      objectReference: {fileID: 990048801}
+      objectReference: {fileID: 1759737221}
     - target: {fileID: 6659469465965689720, guid: c99d3295b153f1b4a8d3fe1c5b69f50d, type: 3}
       propertyPath: celestialBodies.Array.data[4]
       value: 
-      objectReference: {fileID: 570976948}
+      objectReference: {fileID: 990048801}
     - target: {fileID: 6659469465965689720, guid: c99d3295b153f1b4a8d3fe1c5b69f50d, type: 3}
       propertyPath: celestialBodies.Array.data[5]
       value: 
-      objectReference: {fileID: 1997562875}
+      objectReference: {fileID: 570976948}
     - target: {fileID: 6659469465965689720, guid: c99d3295b153f1b4a8d3fe1c5b69f50d, type: 3}
       propertyPath: celestialBodies.Array.data[6]
       value: 
-      objectReference: {fileID: 1947951141}
+      objectReference: {fileID: 1997562875}
     - target: {fileID: 6659469465965689720, guid: c99d3295b153f1b4a8d3fe1c5b69f50d, type: 3}
       propertyPath: celestialBodies.Array.data[7]
       value: 
-      objectReference: {fileID: 165847348}
+      objectReference: {fileID: 1947951141}
     - target: {fileID: 6659469465965689720, guid: c99d3295b153f1b4a8d3fe1c5b69f50d, type: 3}
       propertyPath: celestialBodies.Array.data[8]
       value: 
-      objectReference: {fileID: 748486172}
+      objectReference: {fileID: 165847348}
     - target: {fileID: 6659469465965689720, guid: c99d3295b153f1b4a8d3fe1c5b69f50d, type: 3}
       propertyPath: celestialBodies.Array.data[9]
       value: 
-      objectReference: {fileID: 1759737221}
+      objectReference: {fileID: 748486172}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
