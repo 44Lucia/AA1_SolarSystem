@@ -13,6 +13,8 @@ public class CameraController : MonoBehaviour
 
     private UIManager m_ui;
 
+    private float timeScaleMultiplier = 1.0f;
+
     private void Awake() { m_targetDistance = distanceLimits.y / 2; }
 
     private void Start()
@@ -30,6 +32,8 @@ public class CameraController : MonoBehaviour
 
         HandleTarget();
         HandleZoom();
+
+        HandleTimeScale();
     }
 
     private void HandleRotation()
@@ -90,6 +94,19 @@ public class CameraController : MonoBehaviour
         {
             if (++m_targetIndex == m_possibleTargets.Length) { m_targetIndex = 0; }
             m_ui.SetTargetText(m_possibleTargets[m_targetIndex].name);
+        }
+    }
+
+    private void HandleTimeScale()
+    {
+        if (Input.GetKeyDown(KeyCode.T)) {
+            timeScaleMultiplier *= 2.0f; 
+            Time.timeScale = Mathf.Clamp(timeScaleMultiplier, 1.0f, 16.0f);
+        }
+
+        if (Input.GetKeyDown(KeyCode.R)) {
+            timeScaleMultiplier = 1.0f;
+            Time.timeScale = 1.0f;
         }
     }
 }
