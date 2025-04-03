@@ -4849,7 +4849,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4030326048459444}
-  - component: {fileID: 6518462326645541621}
   - component: {fileID: 1719892212667725003}
   - component: {fileID: 7176699199523369508}
   m_Layer: 0
@@ -4868,35 +4867,14 @@ Transform:
   m_GameObject: {fileID: 1526814149960808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4262619043198982}
   - {fileID: 4349984063913474}
   m_Father: {fileID: 0}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &6518462326645541621
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1526814149960808}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!96 &1719892212667725003
 TrailRenderer:
   serializedVersion: 3
@@ -4939,11 +4917,11 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 30
+  m_Time: 100
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.03
+    widthMultiplier: 0.1
     widthCurve:
       serializedVersion: 2
       m_Curve:
