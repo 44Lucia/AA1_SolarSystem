@@ -4851,6 +4851,7 @@ GameObject:
   - component: {fileID: 4387678931267766}
   - component: {fileID: 4161491410602610745}
   - component: {fileID: 2165043944792678826}
+  - component: {fileID: 627741604859337806}
   m_Layer: 0
   m_Name: Mars
   m_TagString: TrackingObject
@@ -4995,6 +4996,20 @@ MonoBehaviour:
   initialPosition: {x: 1.52, y: 0, z: 0}
   initialVelocity: {x: 0, y: 0, z: 5.06}
   isStatic: 0
+--- !u!114 &627741604859337806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288793558353234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4a7566049d6e047ba3e661a5430e2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 2
+  axis: {x: 0, y: 1, z: 0}
 --- !u!1 &1299526964348990
 GameObject:
   m_ObjectHideFlags: 0

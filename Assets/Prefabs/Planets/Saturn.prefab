@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 4677324220665258}
   - component: {fileID: 6754761948650441446}
   - component: {fileID: 2901870389299412909}
+  - component: {fileID: 6367301224936145168}
   m_Layer: 0
   m_Name: Saturn
   m_TagString: TrackingObject
@@ -239,6 +240,20 @@ MonoBehaviour:
   initialPosition: {x: 9.58, y: 0, z: 0}
   initialVelocity: {x: 0, y: 0, z: 2.04}
   isStatic: 0
+--- !u!114 &6367301224936145168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377197793697218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4a7566049d6e047ba3e661a5430e2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 2
+  axis: {x: 0, y: 1, z: 0}
 --- !u!1 &1445422062220386
 GameObject:
   m_ObjectHideFlags: 0

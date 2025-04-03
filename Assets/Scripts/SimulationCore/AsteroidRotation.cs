@@ -1,8 +1,0 @@
-using UnityEngine;
-
-public class AsteroidRotation : MonoBehaviour
-{
-    [SerializeField] private float rotationSpeed = 5f;
-
-    private void Update() { transform.Rotate(Vector3.back, rotationSpeed * Time.deltaTime); }
-}

@@ -4851,6 +4851,7 @@ GameObject:
   - component: {fileID: 4643521465287934}
   - component: {fileID: 8327627301025794384}
   - component: {fileID: 4324496198258822837}
+  - component: {fileID: 9054220899399015287}
   m_Layer: 0
   m_Name: Earth
   m_TagString: TrackingObject
@@ -4867,7 +4868,7 @@ Transform:
   m_GameObject: {fileID: 1733945558841920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9, y: 0, z: 0}
-  m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
+  m_LocalScale: {x: 0.35, y: 0.4, z: 0.32}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4517316721654034}
@@ -4995,6 +4996,20 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!114 &9054220899399015287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733945558841920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4a7566049d6e047ba3e661a5430e2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 2
+  axis: {x: 0, y: 1, z: 0}
 --- !u!1 &1982611864615202
 GameObject:
   m_ObjectHideFlags: 0

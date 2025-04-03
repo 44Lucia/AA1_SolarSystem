@@ -95,8 +95,8 @@ public class CameraController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.T))
         {
-            timeScaleMultiplier += 2.0f;
-            Time.timeScale = Mathf.Clamp(timeScaleMultiplier, 1.0f, 30.0f);
+            timeScaleMultiplier *= 2.0f;
+            Time.timeScale = Mathf.Clamp(timeScaleMultiplier, 1.0f, 64.0f);
         }
 
         if (Input.GetKeyDown(KeyCode.R))
@@ -108,17 +108,13 @@ public class CameraController : MonoBehaviour
 
     public void PreviousTarget()
     {
-        m_targetIndex--;
-        m_targetIndex = Mathf.Clamp(m_targetIndex, 0, m_possibleTargets.Length - 1);
-
+        if (--m_targetIndex == -1) { m_targetIndex = m_possibleTargets.Length - 1; }
         m_ui.SetTargetText(m_possibleTargets[m_targetIndex].name);
     }
 
     public void NextTarget()
     {
-        m_targetIndex++;
-        m_targetIndex = Mathf.Clamp(m_targetIndex, 0, m_possibleTargets.Length - 1);
-
+        if (++m_targetIndex == m_possibleTargets.Length) { m_targetIndex = 0; }
         m_ui.SetTargetText(m_possibleTargets[m_targetIndex].name);
     }
 }
