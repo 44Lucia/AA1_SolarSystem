@@ -76,17 +76,11 @@ public class CameraController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.LeftArrow)) // Q or <- = prev planet
         {
-            m_targetIndex--;
-            m_targetIndex = Mathf.Clamp(m_targetIndex, 0, m_possibleTargets.Length - 1);
-
-            m_ui.SetTargetText(m_possibleTargets[m_targetIndex].name);
+            PreviousTarget();
         }
         else if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.RightArrow)) // E or -> = next planet
         {
-            m_targetIndex++;
-            m_targetIndex = Mathf.Clamp(m_targetIndex, 0, m_possibleTargets.Length - 1);
-
-            m_ui.SetTargetText(m_possibleTargets[m_targetIndex].name);
+            NextTarget();
         }
 
         // right click
@@ -99,14 +93,32 @@ public class CameraController : MonoBehaviour
 
     private void HandleTimeScale()
     {
-        if (Input.GetKeyDown(KeyCode.T)) {
-            timeScaleMultiplier *= 2.0f; 
-            Time.timeScale = Mathf.Clamp(timeScaleMultiplier, 1.0f, 16.0f);
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            timeScaleMultiplier += 2.0f;
+            Time.timeScale = Mathf.Clamp(timeScaleMultiplier, 1.0f, 30.0f);
         }
 
-        if (Input.GetKeyDown(KeyCode.R)) {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
             timeScaleMultiplier = 1.0f;
             Time.timeScale = 1.0f;
         }
+    }
+
+    public void PreviousTarget()
+    {
+        m_targetIndex--;
+        m_targetIndex = Mathf.Clamp(m_targetIndex, 0, m_possibleTargets.Length - 1);
+
+        m_ui.SetTargetText(m_possibleTargets[m_targetIndex].name);
+    }
+
+    public void NextTarget()
+    {
+        m_targetIndex++;
+        m_targetIndex = Mathf.Clamp(m_targetIndex, 0, m_possibleTargets.Length - 1);
+
+        m_ui.SetTargetText(m_possibleTargets[m_targetIndex].name);
     }
 }
